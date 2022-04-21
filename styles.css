@@ -2,56 +2,79 @@
   font-family: "Poppins", sans-serif;
 }
 body {
+  margin: 0;
+  background: linear-gradient(#e59f79, #35242c);
+}
+
+h1 {
+  box-sizing: border-box;
+  position: fixed;
+  font-family: "Major Mono Display", monospace;
+  font-size: 1.6rem;
+  height: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.content {
   display: flex;
-  align-items: center;
-  background: linear-gradient(#e59f79, #291c23);
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
   height: 100vh;
   margin: 0;
 }
-.intro {
-  flex: 1;
-}
+
 .sky {
   display: flex;
+  margin: 0 1rem;
 }
+
 main {
   flex: 1;
-  color: antiquewhite;
+  color: #faebd7;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
   padding: 0;
   width: 550px;
   flex-shrink: 0;
 }
 
-/* INTRO element */
-.text {
-  max-width: 500px;
-  background-color: antiquewhite;
-  border-radius: 8px;
-  margin: 2rem;
-  padding: 1rem;
+.intro {
+  box-sizing: border-box;
+  width: 366px;
+  margin: 0 2rem 0 1rem;
 }
 
 /* SKY elements */
+#jar {
+  position: fixed;
+  height: 570px;
+  left: -5rem;
+  z-index: 0;
+}
 .sky-con {
   position: relative;
   align-self: center;
+  padding-top: 3rem;
+  padding-left: 2.05rem;
   height: 550px;
 }
 #bg {
   overflow: hidden;
-  height: 550px;
-  border-radius: 8px;
+  margin-top: 2rem;
+  height: 470px;
+  border-radius: 80px 80px 50px 50px;
   z-index: -1;
 }
 
 .star {
   position: absolute;
-  color: antiquewhite;
+  color: #faebd7;
   color: rgba(250, 235, 215, 0);
   font-size: 3rem;
+  transition: ease-in-out 200ms;
 }
 .star:hover {
   cursor: pointer;
@@ -60,50 +83,43 @@ main {
 
 /* STAR POSITIONING */
 .star-0 {
-  top: 21px;
-  left: 13px;
+  top: 103px;
+  left: 247px;
 }
 .star-1 {
-  top: 34px;
-  left: 253px;
+  top: 125px;
+  left: 258px;
 }
 .star-2 {
-  top: 16px;
-  left: 196px;
+  top: 195px;
+  left: 237px;
 }
 .star-3 {
-  top: 156px;
-  left: 188px;
+  top: 208px;
+  left: 190px;
 }
 .star-4 {
-  top: 265px;
-  left: 233px;
+  top: 302px;
+  left: 229px;
 }
 .star-5 {
-  top: 343px;
-  left: 96px;
+  top: 367px;
+  left: 113px;
 }
 .star-6 {
-  top: 348px;
-  left: 75px;
+  top: 372px;
+  left: 93px;
 }
 .star-7 {
-  top: 346px;
-  left: 85px;
+  top: 370px;
+  left: 105px;
 }
 .star-8 {
-  top: 274px;
-  left: 81px;
+  top: 308px;
+  left: 99px;
 }
 /* MAIN element */
 
-h1 {
-  box-sizing: border-box;
-  font-family: "Major Mono Display", monospace;
-  font-size: 1.6rem;
-  height: 2rem;
-  text-align: center;
-}
 h2 {
   display: block;
   color: #77afb1;
@@ -167,11 +183,19 @@ h2.song-title {
   transform: scaleX(-1);
 }
 
+/* INTRO element */
+.text p {
+  max-width: 500px;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
 /* Breakpoints */
 /* Small and medium */
-@media screen and (max-width: 992px) {
-  body {
-    flex-direction: column-reverse;
+@media screen and (max-width: 1100px) {
+  .content {
+    flex-direction: column;
     height: initial;
   }
 }

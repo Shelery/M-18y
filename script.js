@@ -13,6 +13,59 @@ $(document).ready(function () {
     playlistId: playlistId,
   };
 
+  let messages = [
+    [
+      "Eszti és Vali",
+      `Mélyen tisztelt, innentól fogva nagykorú Márta!
+      Remélem, emlékszel még arra a beszélgetésünkre, ami valahol a Barii Egyetem weboldalának szidalmazása után folyt le közöttünk.
+      Nem, nem a fickóra, sem az érthetetlen törzsekre, mégcsak nem is az álom egyetemedre, a Macska Minketre gondolok.
+      Hanem arra, amikor a dalokhoz kapcsolódó emlékekről beszélgettünk. Nekem nagyon emlékezetes volt. Utána is sokszor felidéződött bennem
+      egy kis bödön képe, ami üres, de ami még mindig magában őrzi a kávé illatát, pedig ki tudja, mióta nincs is benne. 
+      (Mert igen, kávé volt eben a hipotetikus bödönben, és úgy főzték le, hogy ne legyen csersavas.)
+      Mint ez a példa is mutatja, a kép megihletett, és arra gondoltam: töltsük meg újra ezt a bödönt. Olyan számokkal, amiket az emberek így-vagy-úgy, de
+      hozzád kötnek. 
+      Ezzel (is) szeretnénk neked boldog 18. születésnapot kívánni!`,
+    ],
+    [
+      "Réka",
+      `Kedves Márti ❤️
+    Nagyon köszönöm, hogy bármit megoszthatok veled és hogy ennyire érdeklődő és nyitott vagy!
+    Szeretem benned, hogy mindig őszinte , direkt, és közvetlen vagy.Nagyon szeretem a humorodat, hogy kapható vagy mindenre és hogy a jövőbeli utazóstársam leszel`,
+    ],
+    [
+      "Brigi",
+      `Mert szereted ezt a számot és azzal hogy beraktad állandóan az agyamra mentél.`,
+    ],
+    [
+      "Gerda",
+      `kedves Márti! Hiába a sok olasz spanyol stb szám, én ezt a számot küldöm neked, ez maradt meg az edzesunkrol. Nem tom miért, nem a szöveget figyeltem, egyszerűen csak ez...boldog születésnapot, szeretettel,`,
+    ],
+    [
+      "Hanga",
+      `Drága Márti! 
+    Egy hozzád kapcsolódó számon gondolkodva eszembe jutott az összes spanyol dal, amit ismerek, partizenék és minden, amire twerkelni lehet, elvégre te tanítottál meg. Valamiért mégis úgy éreztem, ez a jó választás. Talán mert olyan ember vagy, aki tudja élvezni az életet. Akivel hatalmasakat lehet bulizni, de aki érti a világ rendjét, sosem fél hangosan kimondani a véleményét és kiállni magáért. És aki mellett az ember is tudja élvezni az életet. Nekem legalábbis ilyen vagy. Felnézek rád és hihetetlenül hálás vagyok a barátságunkért. Nagyon szeretlek, a legboldogabb szülinapot és egy csodálatos évet kívánok Neked!`,
+    ],
+    [
+      "Zsófi",
+      `Ami eszembejutott, hogy amikor feldobtad ezt a számot, hogy énekeljük a ballagáson eljátszottad egyedül citerán és nagyon büszke voltam rád😢❤️ Boldog szülit a csajszinak!🌷
+    Ui.: Büszke vagyok azért is, hogy milyen bátor világutazó vagy.✈️`,
+    ],
+    [
+      "Lilla",
+      `Ezt a dalt gondolom a közös dalunknak, egyből te jutsz róla eszembe, amikor hallgatom, nagyon sok jó emléket hoz fel bennem. Boldog születésnapot, nagyon szeretlek❤️`,
+      "Ata",
+    ],
+    [
+      "Eszti",
+      `Vannak azok, akik olyan különlegesek, hogy mellettük minden más szürkének tűnik. És vannak azok, akik olyan kivételesek, hogy körülöttük minden színesebbnek tűnik. Ez valahogy szebben volt megfogalmazva, de a lényeg az, hogy te az utóbbi vagy.
+    Csodálom azt az erőt, amivel képviseled az értékeidet, és azt a törődést, amivel mindenki felé viseltetsz. Neked talán fel sem tűnik, de nekem újra és újra példaként szolgál.
+    Nagyon boldog születésnapot kívánok neked!`,
+    ],
+    ["Maja", `feliz cumpleaños a la mejor novia`],
+    ["Bette"],
+  ];
+  console.log(messages[0][0]);
+
   loadVids();
 
   // Make the videos appear on the page
@@ -38,10 +91,9 @@ $(document).ready(function () {
           width="560"
           height="315"
           src="https://www.youtube.com/embed/${id}?&autoplay=1&controls=0"
-          referrerpolicy = "strict-origin-when-cross-origin"
+          
           title="YouTube video player"
           frameborder="0"
-          gesture="media"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
