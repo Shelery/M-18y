@@ -15,8 +15,7 @@ $(document).ready(function () {
 
   let messages = [
     [
-      "Eszti és Vali",
-      `Mélyen tisztelt, innentól fogva nagykorú Márta!
+      `Mélyen tisztelt, innentól fogva nagykorú Márta! <br>
       Remélem, emlékszel még arra a beszélgetésünkre, ami valahol a Barii Egyetem weboldalának szidalmazása után folyt le közöttünk.
       Nem, nem a fickóra, sem az érthetetlen törzsekre, mégcsak nem is az álom egyetemedre, a Macska Minketre gondolok.
       Hanem arra, amikor a dalokhoz kapcsolódó emlékekről beszélgettünk. Nekem nagyon emlékezetes volt. Utána is sokszor felidéződött bennem
@@ -24,47 +23,45 @@ $(document).ready(function () {
       (Mert igen, kávé volt eben a hipotetikus bödönben, és úgy főzték le, hogy ne legyen csersavas.)
       Mint ez a példa is mutatja, a kép megihletett, és arra gondoltam: töltsük meg újra ezt a bödönt. Olyan számokkal, amiket az emberek így-vagy-úgy, de
       hozzád kötnek. 
-      Ezzel (is) szeretnénk neked boldog 18. születésnapot kívánni!`,
+      Ezzel (is) szeretnénk neked boldog 18. születésnapot kívánni! - Eszti és Vali`,
     ],
     [
-      "Réka",
       `Kedves Márti ❤️
     Nagyon köszönöm, hogy bármit megoszthatok veled és hogy ennyire érdeklődő és nyitott vagy!
-    Szeretem benned, hogy mindig őszinte , direkt, és közvetlen vagy.Nagyon szeretem a humorodat, hogy kapható vagy mindenre és hogy a jövőbeli utazóstársam leszel`,
+    Szeretem benned, hogy mindig őszinte , direkt, és közvetlen vagy.Nagyon szeretem a humorodat, hogy kapható vagy mindenre és hogy a jövőbeli utazóstársam leszel - Réka`,
     ],
     [
-      "Brigi",
-      `Mert szereted ezt a számot és azzal hogy beraktad állandóan az agyamra mentél.`,
+      `Mert szereted ezt a számot és azzal hogy beraktad állandóan az agyamra mentél. - Brigi`,
     ],
     [
-      "Gerda",
-      `kedves Márti! Hiába a sok olasz spanyol stb szám, én ezt a számot küldöm neked, ez maradt meg az edzesunkrol. Nem tom miért, nem a szöveget figyeltem, egyszerűen csak ez...boldog születésnapot, szeretettel,`,
+      `kedves Márti! Hiába a sok olasz spanyol stb szám, én ezt a számot küldöm neked, ez maradt meg az edzesunkrol. Nem tom miért, nem a szöveget figyeltem, egyszerűen csak ez...boldog születésnapot, szeretettel, Gerda`,
     ],
     [
-      "Hanga",
       `Drága Márti! 
-    Egy hozzád kapcsolódó számon gondolkodva eszembe jutott az összes spanyol dal, amit ismerek, partizenék és minden, amire twerkelni lehet, elvégre te tanítottál meg. Valamiért mégis úgy éreztem, ez a jó választás. Talán mert olyan ember vagy, aki tudja élvezni az életet. Akivel hatalmasakat lehet bulizni, de aki érti a világ rendjét, sosem fél hangosan kimondani a véleményét és kiállni magáért. És aki mellett az ember is tudja élvezni az életet. Nekem legalábbis ilyen vagy. Felnézek rád és hihetetlenül hálás vagyok a barátságunkért. Nagyon szeretlek, a legboldogabb szülinapot és egy csodálatos évet kívánok Neked!`,
+    Egy hozzád kapcsolódó számon gondolkodva eszembe jutott az összes spanyol dal, amit ismerek, partizenék és minden, amire twerkelni lehet, elvégre te tanítottál meg. Valamiért mégis úgy éreztem, ez a jó választás. Talán mert olyan ember vagy, aki tudja élvezni az életet. Akivel hatalmasakat lehet bulizni, de aki érti a világ rendjét, sosem fél hangosan kimondani a véleményét és kiállni magáért. És aki mellett az ember is tudja élvezni az életet. Nekem legalábbis ilyen vagy. Felnézek rád és hihetetlenül hálás vagyok a barátságunkért. Nagyon szeretlek, a legboldogabb szülinapot és egy csodálatos évet kívánok Neked!
+     - Hanga`,
     ],
     [
-      "Zsófi",
       `Ami eszembejutott, hogy amikor feldobtad ezt a számot, hogy énekeljük a ballagáson eljátszottad egyedül citerán és nagyon büszke voltam rád😢❤️ Boldog szülit a csajszinak!🌷
-    Ui.: Büszke vagyok azért is, hogy milyen bátor világutazó vagy.✈️`,
+    Ui.: Büszke vagyok azért is, hogy milyen bátor világutazó vagy.✈️ - Zsófi `,
     ],
     [
-      "Lilla",
-      `Ezt a dalt gondolom a közös dalunknak, egyből te jutsz róla eszembe, amikor hallgatom, nagyon sok jó emléket hoz fel bennem. Boldog születésnapot, nagyon szeretlek❤️`,
-      "Ata",
+      `Ezt a dalt gondolom a közös dalunknak, egyből te jutsz róla eszembe, amikor hallgatom, nagyon sok jó emléket hoz fel bennem. Boldog születésnapot, nagyon szeretlek❤️ - Lilla`,
     ],
     [
-      "Eszti",
       `Vannak azok, akik olyan különlegesek, hogy mellettük minden más szürkének tűnik. És vannak azok, akik olyan kivételesek, hogy körülöttük minden színesebbnek tűnik. Ez valahogy szebben volt megfogalmazva, de a lényeg az, hogy te az utóbbi vagy.
     Csodálom azt az erőt, amivel képviseled az értékeidet, és azt a törődést, amivel mindenki felé viseltetsz. Neked talán fel sem tűnik, de nekem újra és újra példaként szolgál.
-    Nagyon boldog születésnapot kívánok neked!`,
+    Nagyon boldog születésnapot kívánok neked! - Eszti`,
     ],
-    ["Maja", `feliz cumpleaños a la mejor novia`],
     ["Bette"],
+    ["Bette"],
+    ["Bette"],
+    ["Bette"],
+    [`feliz cumpleaños a la mejor novia - Maja`],
+    [`feliz cumpleaños a la mejor novia - Maja`],
+    [`feliz cumpleaños a la mejor novia - Maja`],
   ];
-  console.log(messages[0][0]);
+  console.log(messages[0][1]);
 
   loadVids();
 
@@ -77,15 +74,16 @@ $(document).ready(function () {
       // Get main video's id from 'data' JSON
       let id = data.items[0].snippet.resourceId.videoId;
       let title = data.items[0].snippet.title;
+      let pos = 0;
       // Get main video
-      mainVid(id, title);
+      mainVid(id, title, pos);
       // Get the videos of playlist
       resultsLoop(data);
     });
   }
 
   // Make main video appear on page
-  function mainVid(id, title) {
+  function mainVid(id, title, pos) {
     $("#video").html(`
       <iframe
           width="560"
@@ -100,6 +98,11 @@ $(document).ready(function () {
       `);
     $(".song-title").html(`
         ${title}
+    `);
+    $(".intro").html(`
+      <p>
+      ${messages[pos]}
+      </p>
     `);
   }
 
@@ -119,7 +122,7 @@ $(document).ready(function () {
       let vid = item.snippet.resourceId.videoId;
 
       $(".sky-con").append(`
-        <div class="star-${i} star", data-key="${vid}", title="${title}"> + </div>
+        <div id = "${i}" class="star-${i} star", data-key="${vid}", title="${title}"> + </div>
         `);
     });
   }
@@ -128,6 +131,7 @@ $(document).ready(function () {
   $(".sky-con").on("click", ".star", function () {
     let id = $(this).attr("data-key");
     let title = $(this).attr("title");
-    mainVid(id, title);
+    let pos = parseInt($(this).attr("id"));
+    mainVid(id, title, pos);
   });
 });
