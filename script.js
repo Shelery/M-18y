@@ -38,8 +38,10 @@ $(document).ready(function () {
           width="560"
           height="315"
           src="https://www.youtube.com/embed/${id}?&autoplay=1&controls=0"
+          referrerpolicy = "strict-origin-when-cross-origin"
           title="YouTube video player"
           frameborder="0"
+          gesture="media"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
