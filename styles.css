@@ -1,0 +1,125 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  background: linear-gradient(#e59f79, #291c23);
+  margin: 0;
+}
+.intro {
+  flex: 1;
+}
+.sky {
+  height: 100vh;
+  position: relative;
+}
+main {
+  flex: 1;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 550px;
+  flex-shrink: 0;
+}
+
+/* INTRO element */
+.text {
+  max-width: 500px;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+/* SKY elements */
+.img-con {
+  height: 100vh;
+}
+#bg {
+  height: 100vh;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  top: 30px;
+  color: rgba(250, 235, 215, 0);
+  font-size: 3rem;
+}
+.star:hover {
+  text-shadow: 1px 1px 5px rgb(252, 252, 252);
+}
+
+/* MAIN element */
+
+h1 {
+  box-sizing: border-box;
+  font-family: "Major Mono Display", monospace;
+  font-size: 1.6rem;
+  height: 2rem;
+  text-align: center;
+}
+h2 {
+  display: block;
+  color: #77afb1;
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+  width: 100%;
+
+  z-index: 3;
+}
+h2#date {
+  text-align: end;
+}
+h2.song-title {
+  margin: 0 auto;
+}
+#video {
+  overflow: hidden;
+  width: 100%;
+
+  border-radius: 8px;
+  width: 180px;
+  height: 180px;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+}
+#video iframe {
+  /* Extend it beyond the viewport... */
+  width: 650%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -275%;
+}
+
+.video-con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 2rem;
+  width: 100%;
+}
+.video-con button {
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  height: 50px;
+  padding: 18px 9px 66px 22px;
+  transition: ease-in-out 100ms;
+}
+.video-con button img {
+  width: 50px;
+}
+.video-con button:hover {
+  border: 2px solid antiquewhite;
+}
+
+.video-con .back {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
