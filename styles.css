@@ -3,15 +3,16 @@
 }
 body {
   display: flex;
+  align-items: center;
   background: linear-gradient(#e59f79, #291c23);
+  height: 100vh;
   margin: 0;
 }
 .intro {
   flex: 1;
 }
 .sky {
-  height: 100vh;
-  position: relative;
+  display: flex;
 }
 main {
   flex: 1;
@@ -34,24 +35,66 @@ main {
 }
 
 /* SKY elements */
-.img-con {
-  height: 100vh;
+.sky-con {
+  position: relative;
+  align-self: center;
+  height: 550px;
 }
 #bg {
-  height: 100vh;
+  overflow: hidden;
+  height: 550px;
+  border-radius: 8px;
   z-index: -1;
 }
 
 .star {
   position: absolute;
-  top: 30px;
+  color: antiquewhite;
   color: rgba(250, 235, 215, 0);
   font-size: 3rem;
 }
 .star:hover {
+  cursor: pointer;
   text-shadow: 1px 1px 5px rgb(252, 252, 252);
 }
 
+/* STAR POSITIONING */
+.star-0 {
+  top: 21px;
+  left: 13px;
+}
+.star-1 {
+  top: 34px;
+  left: 253px;
+}
+.star-2 {
+  top: 16px;
+  left: 196px;
+}
+.star-3 {
+  top: 156px;
+  left: 188px;
+}
+.star-4 {
+  top: 265px;
+  left: 233px;
+}
+.star-5 {
+  top: 343px;
+  left: 96px;
+}
+.star-6 {
+  top: 348px;
+  left: 75px;
+}
+.star-7 {
+  top: 346px;
+  left: 85px;
+}
+.star-8 {
+  top: 274px;
+  left: 81px;
+}
 /* MAIN element */
 
 h1 {
@@ -122,4 +165,13 @@ h2.song-title {
 .video-con .back {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+/* Breakpoints */
+/* Small and medium */
+@media screen and (max-width: 992px) {
+  body {
+    flex-direction: column-reverse;
+    height: initial;
+  }
 }
