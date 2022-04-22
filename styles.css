@@ -1,5 +1,4 @@
 * {
-  transition: ease-in-out 100ms;
   font-family: "Poppins", sans-serif;
 }
 body {
@@ -7,6 +6,17 @@ body {
   background: linear-gradient(#e59f79, #35242c);
 
   overflow: hidden;
+  animation: fadeInAnimation ease 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h2 {
@@ -65,8 +75,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  margin: 3rem 0 1rem -1rem;
   margin-top: 3rem;
+  margin-left: -1rem;
   padding: 0;
   width: 550px;
   height: 100vh;
@@ -78,6 +89,8 @@ main {
   width: 366px;
   flex: 1;
   margin: 0 2rem 0 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* SKY elements */
@@ -153,6 +166,47 @@ main {
   top: 308px;
   left: 99px;
 }
+.star-9 {
+  top: 334px;
+  left: 138px;
+}
+.star-10 {
+  top: 426px;
+  left: 116px;
+}
+.star-11 {
+  top: 397px;
+  left: 95px;
+}
+.star-12 {
+  top: 415px;
+  left: 64px;
+}
+.star-13 {
+  top: 412px;
+  left: 134px;
+}
+.star-14 {
+  top: 349px;
+  left: 190px;
+}
+.star-15 {
+  top: 120px;
+  left: 101px;
+}
+.star-16 {
+  top: 230px;
+  left: 64px;
+}
+.star-17 {
+  top: 307px;
+  left: 132px;
+}
+.star-18 {
+  top: 90px;
+  left: 197px;
+}
+
 /* MAIN element */
 
 h2.song-title {
@@ -185,7 +239,7 @@ h2.song-title {
   margin-top: 2rem;
   width: 100%;
 }
-.video-con button {
+/* .video-con button {
   box-sizing: border-box;
   background: none;
   border: none;
@@ -205,7 +259,7 @@ h2.song-title {
 .video-con .back {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-}
+} */
 
 #thumb h2 {
   max-width: 450px;
@@ -223,6 +277,10 @@ h2.song-title {
   border-radius: 3px;
   padding: 2rem;
   margin-bottom: 4rem;
+
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 /* Breakpoints */
 /* Default: extra-large */

@@ -15,15 +15,15 @@ $(document).ready(function () {
 
   let messages = [
     [
-      `Mélyen tisztelt, innentól fogva nagykorú Márta! <br>
+      `Mélyen tisztelt, tegnaptól fogva nagykorú Márta! <br> <br>
       Remélem, emlékszel még arra a beszélgetésünkre, ami valahol a Barii Egyetem weboldalának szidalmazása után folyt le közöttünk.
-      Nem, nem a fickóra, sem az érthetetlen törzsekre, mégcsak nem is az álom egyetemedre, a Macska Minketre gondolok.
+      Nem, nem a fickóra, sem az érthetetlen törzsekre, mégcsak nem is az álom egyetemedre, a Macska Minketre gondolok. <br>
       Hanem arra, amikor a dalokhoz kapcsolódó emlékekről beszélgettünk. Nekem nagyon emlékezetes volt. Utána is sokszor felidéződött bennem
       egy kis bödön képe, ami üres, de ami még mindig magában őrzi a kávé illatát, pedig ki tudja, mióta nincs is benne. 
-      (Mert igen, kávé volt eben a hipotetikus bödönben, és úgy főzték le, hogy ne legyen csersavas.)
-      Mint ez a példa is mutatja, a kép megihletett, és arra gondoltam: töltsük meg újra ezt a bödönt. Olyan számokkal, amiket az emberek így-vagy-úgy, de
+      (Mert igen, kávé volt ebben a hipotetikus bödönben, és úgy főzték le, hogy ne legyen csersavas.) <br>
+      Mint ez a példa is mutatja, a kép megihletett, és arra gondoltam: töltsük meg újra ezt a bödönt. Olyan számokkal, amiket az emberek
       hozzád kötnek. <br> 
-      Ezzel (is) szeretnénk neked boldog 18. születésnapot kívánni! - Eszti és Vali`,
+      Ezzel (is) szeretnénk neked boldog 18. születésnapot kívánni! <br> - Eszti és Vali`,
     ],
     [
       `Kedves Márti ❤️<br> 
@@ -51,15 +51,32 @@ $(document).ready(function () {
     [
       `Vannak azok, akik olyan különlegesek, hogy mellettük minden más szürkének tűnik. És vannak azok, akik olyan kivételesek, hogy körülöttük minden színesebbnek tűnik. Ez valahogy szebben volt megfogalmazva, de a lényeg az, hogy te az utóbbi vagy.
     Csodálom azt az erőt, amivel képviseled az értékeidet, és azt a törődést, amivel mindenki felé viseltetsz. Neked talán fel sem tűnik, de nekem újra és újra példaként szolgál.
-    Nagyon boldog születésnapot kívánok neked! - Eszti`,
+    Nagyon boldog születésnapot kívánok neked! <br>
+     - Eszti`,
     ],
-    ["Bette"],
-    ["Bette"],
-    ["Bette"],
-    ["Bette"],
+    [`Bette`],
+    [`Bette`],
+    [`Bette`],
+    [`Bette`],
     [`feliz cumpleaños a la mejor novia <br>  - Maja`],
     [`feliz cumpleaños a la mejor novia <br> - Maja`],
     [`feliz cumpleaños a la mejor novia <br>  - Maja`],
+    [
+      `Tudom, hogy a kis társaságunkban Alvaro Soler underrated, de te szereted, és hát actually én is, szóval nagyon-nagyon sok szeretettel küldöm neked őt, és ha nem találsz senkit aki szívesen hallgatja veled, akkor gondolj rám és jövök❤️
+      <br> PS.: ha rossz kedved van, akkor pedig nézd meg youtubeon a rajzolt klipjét ennek a számnak, mert hihetetlen cuki és remélem feldobja a napod!!🐥
+      <br> - Dorka`,
+    ],
+    [
+      ` La canzone è "È nu juorn buon" significa che è una bella giornata oggi, Gabriellin è il nome del bambino Gabriele, e  sta per chi ogni giorno scopre il mondo attraverso gli occhi del fanciullino, che è infantile ma curioso. Sta a noi scoprire piú cose del mondo che ci circonda e lo si deve fare sempre con tanta sorpresa emotiva. Ti auguro tanti successi nella vita Márti, divertiti stasera💓💋 <br> - Giovanni`,
+    ],
+    [
+      ` Boldog születésnapot! <br>
+        Ne szálljon el a feje a "kék mesternek", de csak így tovább.
+        Egy éven belül a legprofibb falmászók leszünk.
+        <br> - Domonkos
+        `,
+    ],
+    [`Simone`],
   ];
   console.log(messages[0][1]);
 
@@ -77,7 +94,7 @@ $(document).ready(function () {
       let pos = 0;
       let autoplay = 0;
       // Get main video
-      mainVid(id, title, pos);
+      mainVid(id, title, pos, autoplay);
       // Get the videos of playlist
       resultsLoop(data);
     });
@@ -90,7 +107,7 @@ $(document).ready(function () {
           width="560"
           height="315"
           src="https://www.youtube.com/embed/${id}?&autoplay=${autoplay}&controls=0"
-          
+          id = ${pos}
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -115,10 +132,7 @@ $(document).ready(function () {
     //      Explanation:
     //      list = data.items; i = number of position; item = element of list
     $.each(data.items, function (i, item) {
-      // thumb = video urls
-      let thumb = item.snippet.thumbnails.medium.url;
       let title = item.snippet.title;
-      let descr = item.snippet.description.substring(0, 100);
       // vid = video id
       let vid = item.snippet.resourceId.videoId;
 
