@@ -9,7 +9,7 @@ $(document).ready(function () {
   var options = {
     part: "snippet",
     key: key,
-    maxResults: 20,
+    maxResults: 21,
     playlistId: playlistId,
   };
 
@@ -77,6 +77,12 @@ $(document).ready(function () {
         `,
     ],
     [`Simone`],
+    [
+      `Kedves Márti! <br> Azért ezt a dalt küldöm, mert ez a legnevezetesebb ESZTÉTIKUS HALÁLZENE. Hogy legyen valami az elmélázós napokra is, amikor az ember nem fut vagy táncol, hanem csak sétál és nézi a tájat.  A sok mulatós mellett szerettem volna ezzel színesíteni a gyűjteményt, mint ahogy a személyiségem színesíti az életeted. Örülök, hogy örökbefogadtunk 3. ikernek, remélem, tudod, hogy már soha nem kerülsz távol a szívünktől, bárhova is utazz a fizikai világban! Élvezd az életet, és tudd, hogy mindig lesznek körülötted emberek, akikre számíthatsz - még ha a fizikai világban nincsenek is mindig melletted! <br> - Vali`,
+    ],
+    [
+      `If you don't do wild things while you are young, you will have nothing to smile about when you are old. However remember; now that you are an adult, you can do all the  things you are doing illegally before legally <br> - Adi`,
+    ],
   ];
   console.log(messages[0][1]);
 

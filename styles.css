@@ -151,16 +151,16 @@ main {
   left: 229px;
 }
 .star-5 {
-  top: 367px;
-  left: 113px;
+  top: 140px;
+  left: 173px;
 }
 .star-6 {
-  top: 372px;
-  left: 93px;
+  top: 90px;
+  left: 197px;
 }
 .star-7 {
-  top: 370px;
-  left: 105px;
+  top: 372px;
+  left: 93px;
 }
 .star-8 {
   top: 308px;
@@ -203,10 +203,18 @@ main {
   left: 132px;
 }
 .star-18 {
-  top: 90px;
-  left: 197px;
+  top: 370px;
+  left: 105px;
 }
 
+.star-19 {
+  top: 367px;
+  left: 113px;
+}
+.star-20 {
+  top: 244px;
+  left: 156px;
+}
 /* MAIN element */
 
 h2.song-title {
@@ -359,6 +367,7 @@ button a:hover {
     flex: 0.5 1 auto;
     width: 100vh;
     max-width: 366px;
+    margin: 0 auto;
   }
   .intro {
     flex: 1 0 auto;
