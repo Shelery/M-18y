@@ -212,6 +212,29 @@ main {
 h2.song-title {
   margin: 0 auto;
 }
+
+button {
+  margin-top: 4rem;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  justify-self: end;
+  height: 2.5rem;
+}
+
+button a {
+  padding: 0.5rem 5rem;
+  border-radius: 30px;
+  border: 2px solid antiquewhite;
+  text-decoration: none;
+  color: antiquewhite;
+  transition: ease-in-out 150ms;
+}
+button a:hover {
+  color: #35242c;
+  background-color: antiquewhite;
+}
+
 #video {
   overflow: hidden;
   width: 100%;
@@ -239,27 +262,6 @@ h2.song-title {
   margin-top: 2rem;
   width: 100%;
 }
-/* .video-con button {
-  box-sizing: border-box;
-  background: none;
-  border: none;
-  border-radius: 100%;
-  border: 3px solid transparent;
-  height: 50px;
-  padding: 18px 9px 66px 22px;
-  transition: ease-in-out 100ms;
-}
-.video-con button img {
-  width: 50px;
-}
-.video-con button:hover {
-  border: 3px solid antiquewhite;
-}
-
-.video-con .back {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-} */
 
 #thumb h2 {
   max-width: 450px;
