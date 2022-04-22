@@ -9,12 +9,32 @@ body {
   overflow: hidden;
 }
 
+h2 {
+  box-sizing: border-box;
+  display: block;
+  color: #77afb1;
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+
+  z-index: 3;
+}
+h2#date {
+  text-align: end;
+  position: fixed;
+  color: antiquewhite;
+  font-size: 2rem;
+  margin-top: -2rem;
+  z-index: -1;
+}
+
 h1 {
   box-sizing: border-box;
   position: fixed;
   font-family: "Major Mono Display", monospace;
   color: rgb(250, 235, 215, 0.8);
-  font-size: 4rem;
+  font-size: 2.5rem;
   width: 100%;
   height: 2rem;
   padding: 1rem;
@@ -25,7 +45,7 @@ h1 {
 .content {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
   height: 100vh;
   margin: 0;
   margin-top: 4rem;
@@ -38,6 +58,7 @@ h1 {
 }
 
 main {
+  box-sizing: border-box;
   flex: 1;
   color: #faebd7;
   display: flex;
@@ -134,24 +155,6 @@ main {
 }
 /* MAIN element */
 
-h2 {
-  display: block;
-  color: #77afb1;
-  font-family: "Major Mono Display", monospace;
-  font-size: 2rem;
-  text-align: center;
-  width: 100%;
-
-  z-index: 3;
-}
-h2#date {
-  text-align: end;
-  position: fixed;
-  color: #7d9fa0;
-  font-size: 2rem;
-  margin-top: -2rem;
-  z-index: -1;
-}
 h2.song-title {
   margin: 0 auto;
 }
@@ -160,7 +163,7 @@ h2.song-title {
   width: 100%;
 
   border-radius: 8px;
-  box-shadow: 10px 10px 20px 5px #1f191f;
+  box-shadow: 10px 10px 20px 5px #110e11;
   width: 180px;
   height: 180px;
   /* Keep it the right aspect-ratio */
@@ -216,18 +219,14 @@ h2.song-title {
 .intro p {
   max-width: 500px;
   background-color: antiquewhite;
-  box-shadow: 5px 5px 15px 5px #574156;
+  box-shadow: 5px 5px 15px 5px #271d27;
   border-radius: 3px;
-  padding: 1rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
 }
 /* Breakpoints */
 /* Default: extra-large */
 
-@media screen and (max-width: 1255px) {
-  body {
-    overflow: initial;
-  }
-}
 /* Large */
 @media screen and (max-width: 1250px) {
   body {
@@ -247,6 +246,7 @@ h2.song-title {
   }
   .intro {
     flex: 1 0 auto;
+    margin-bottom: 2rem;
   }
   .intro p {
     margin: 0 auto;
@@ -257,6 +257,11 @@ h2.song-title {
   body {
     overflow: initial;
   }
+  h1#M18 {
+    text-align: end;
+    width: 100%;
+  }
+
   .content {
     height: initial;
     flex-wrap: wrap;
@@ -268,12 +273,15 @@ h2.song-title {
     flex: 0.5 1 auto;
     width: 40vh;
     max-width: 700px;
+    margin-top: 0;
   }
   .intro {
     flex: 1 0 auto;
     width: 100vh;
+    margin-bottom: 2rem;
   }
 }
+
 /* small */
 @media screen and (max-width: 831px) {
   body {
@@ -285,14 +293,19 @@ h2.song-title {
   }
   .sky {
     flex: 1;
+    margin-top: 14rem;
   }
   main {
     flex: 0.5 1 auto;
     width: 100vh;
+    max-width: 366px;
   }
   .intro {
     flex: 1 0 auto;
     width: 100vh;
+    max-width: 366px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
   .intro p {
     margin: 0 auto;

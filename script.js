@@ -75,6 +75,7 @@ $(document).ready(function () {
       let id = data.items[0].snippet.resourceId.videoId;
       let title = data.items[0].snippet.title;
       let pos = 0;
+      let autoplay = 0;
       // Get main video
       mainVid(id, title, pos);
       // Get the videos of playlist
@@ -83,12 +84,12 @@ $(document).ready(function () {
   }
 
   // Make main video appear on page
-  function mainVid(id, title, pos) {
+  function mainVid(id, title, pos, autoplay) {
     $("#video").html(`
       <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/${id}?&autoplay=1&controls=0"
+          src="https://www.youtube.com/embed/${id}?&autoplay=${autoplay}&controls=0"
           
           title="YouTube video player"
           frameborder="0"
@@ -132,6 +133,7 @@ $(document).ready(function () {
     let id = $(this).attr("data-key");
     let title = $(this).attr("title");
     let pos = parseInt($(this).attr("id"));
-    mainVid(id, title, pos);
+    let autoplay = 1;
+    mainVid(id, title, pos, autoplay);
   });
 });
